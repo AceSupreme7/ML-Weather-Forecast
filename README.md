@@ -19,3 +19,19 @@ A machine learning-powered weather prediction system that forecasts foremost tem
 
 ```bash
 pip install pandas numpy scikit-learn matplotlib requests
+```
+
+## ⚙️ Configuration
+
+Edit `config.py` to set your location and API key:
+
+```python
+# Set your location from available options
+LOCATION = {
+    "latitude": COO["New York"][0],  # Change to your city
+    "longitude": COO["New York"][1]
+}
+
+# Add your WeatherAPI key
+API_KEY = "your_actual_api_key_here"
+```
