@@ -333,14 +333,11 @@ def generate_location_based_temperature(self, hour, day_of_year, climate):
 - Microclimate effects not captured  
 - Rapidly evolving systems (thunderstorms)  
 
-### Known Error Patterns
-```python
-# Common prediction failures:
+### Known Error Patterns (Common prediction failures)
 - Over-smoothing of rapid changes
 - Underestimation of extreme events  
 - Lag in detecting pattern shifts
 - Difficulty with coastal/mountain effects
-```
 
 ## Historical Data Accuracy Analysis
 
