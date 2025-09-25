@@ -260,9 +260,9 @@ def analyze_location_climate(self):
 ### 2. Feature Engineering Pipeline
 
 #### Meteorological Calculations
-- **Net Radiation**: Q_sw - Q_sw_up + Q_lw_down - Q_lw_up  
-- **Heat Index**: -8.784 + 1.611*T + 2.338*RH - 0.146*T*RH  
-- **Wind Chill**: 13.12 + 0.6215*T - 11.37*V^0.16 + 0.3965*T*V^0.16  
+- **Net Radiation**: ``Q_sw - Q_sw_up + Q_lw_down - Q_lw_up  ``
+- **Heat Index**: ``-8.784 + 1.611*T + 2.338*RH - 0.146*T*RH `` 
+- **Wind Chill**: ``13.12 + 0.6215*T - 11.37*V^0.16 + 0.3965*T*V^0.16  ``
 - **Dew Point**: Complex logarithmic calculations  
 
 #### Temporal Features
