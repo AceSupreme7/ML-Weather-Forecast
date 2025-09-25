@@ -77,7 +77,7 @@ The system analyzes location-specific patterns:
 - Crossing Pattern Detection for rapid temperature changes  
 
 ### Visualization
-- Dual-panel charts showing temperature and precipitation  
+- charts showing temperature and precipitation  
 - Smart pattern detection with color-coded trends  
 - Hourly breakdown with change indicators  
 - Console output for quick reference  
