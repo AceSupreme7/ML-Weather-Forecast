@@ -266,7 +266,7 @@ def analyze_location_climate(self):
 - **Dew Point**: Complex logarithmic calculations  
 
 #### Temporal Features
-- **Cyclical Encoding**: sin(2π*hour/24), cos(2π*hour/24)  
+- **Cyclical Encoding**: ``sin(2π*hour/24), cos(2π*hour/24)  ``
 - **Seasonal Indicators**: Day of year, seasonal categories  
 - **Recency Weighting**: Recent data weighted more heavily  
 
