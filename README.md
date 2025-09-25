@@ -351,7 +351,7 @@ Based on the current configuration using 365 days of historical data, here's the
 | 31–90 days | 90–95%         | High         | Seasonal pattern recognition        |
 | 91–180 days| 85–90%         | Good         | Medium-term trend analysis          |
 
-## Optimal Data Window Analysis
+### Optimal Data Window Analysis
 
 **Most Accurate Data**: Last 90 Days  
 
@@ -361,7 +361,7 @@ OPTIMAL_HISTORICAL_DAYS = 90  # Highest quality data
 HIGH_CONFIDENCE_DAYS = 30     # Near-perfect accuracy
 ```
 
-## Why 90 Days ?
+### Why 90 Days ?
 - **Data Freshness**: Weather patterns have memory of ~60–90 days  
 - **Seasonal Relevance**: Captures current season + transition period  
 - **API Reliability**: Recent data has fewer missing values  
