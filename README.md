@@ -133,8 +133,7 @@ Crossing pattern detected in temperature prediction
 ### Crossing Pattern Detection
 The system automatically detects unusual temperature fluctuations:
 - **Large Change Threshold**: >5°C per hour  
-- **Visual Highlighting**: Orange-colored significant changes  
-- **Smoothed Trends**: Green dashed line showing overall pattern  
+- **Smoothed Trends**: line showing overall pattern  
 
 ### Location Intelligence
 - **Latitude-based Scaling**: More extreme seasons at higher latitudes  
@@ -231,12 +230,6 @@ if crossing_detected:
 - Rapid pressure changes  
 - Unexpected precipitation patterns  
 - Deviation from seasonal norms  
-
-### Anomaly Response Mechanisms
-- **Visual Highlighting**: Orange-colored segments on charts  
-- **Smoothed Trend Lines**: Green dashed lines show underlying patterns  
-- **Console Warnings**: Immediate notification of detected anomalies  
-- **Confidence Scoring**: Reduced weight for anomalous periods  
 
 ## How the Prediction Engine Works
 
