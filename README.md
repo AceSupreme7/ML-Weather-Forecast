@@ -401,4 +401,4 @@ def temporal_cross_validation(self):
 ## Practical Recommendation
 This system provides weather guidance rather than absolute predictions. It excels at identifying trends and patterns while clearly flagging uncertain periods. Users should treat it as a decision support tool rather than a definitive forecast, particularly appreciating its honest communication of confidence levels through anomaly detection.
 
-**Overall Accuracy Rating**: 82% — Competent for most practical applications with appropriate understanding of limitations.
+**Overall Accuracy Rating**: 82% - Competent for most practical applications with appropriate understanding of limitations.
