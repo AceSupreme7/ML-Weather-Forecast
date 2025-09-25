@@ -11,7 +11,7 @@ A machine learning-powered weather prediction system that forecasts foremost tem
 | **config.py** | Configuration management | API settings, location coordinates, time ranges |
 | **weather_predictor.py** | ML prediction engine | Random Forest classifier, Linear Regression, feature engineering |
 | **weather_fetcher.py** | Data acquisition | Weather API integration, data parsing |
-| **visualizer.py** | Results visualization | Matplotlib charts, crossing pattern detection |
+| **visualizer.py** | Results visualization | Matplotlib charts |
 
 ## Quick Start
 
@@ -74,7 +74,6 @@ The system analyzes location-specific patterns:
 - 24-hour Temperature Forecast with trend analysis  
 - Precipitation Probability and amount predictions  
 - Weather Condition Classification (rain, sunny, cloudy, etc.)  
-- Crossing Pattern Detection for rapid temperature changes  
 
 ### Visualization
 - charts showing temperature and precipitation  
@@ -125,15 +124,9 @@ Hour  2:  10.9°C (-0.9°C) |  0.0mm
 ...
 Hour 23:  15.2°C (+1.1°C) |  0.3mm
 
-Crossing pattern detected in temperature prediction
 ```
 
 ## Advanced Features
-
-### Crossing Pattern Detection
-The system automatically detects unusual temperature fluctuations:
-- **Large Change Threshold**: >5°C per hour  
-- **Smoothed Trends**: line showing overall pattern  
 
 ### Location Intelligence
 - **Latitude-based Scaling**: More extreme seasons at higher latitudes  
@@ -211,25 +204,6 @@ The weather predictor demonstrates variable accuracy levels across different met
 - Microclimate variations  
 - Unprecedented weather events  
 - Long-range forecasts (>24 hours)  
-
-## Anomaly Detection System
-
-### Crossing Pattern Detection
-```python
-# Detection Algorithm
-temp_changes = np.diff(temperatures)
-crossing_detected = np.any(np.abs(temp_changes) > 5)  # 5°C threshold
-
-if crossing_detected:
-    print("Crossing pattern detected in temperature prediction")
-    # Highlights unusual temperature fluctuations
-```
-
-### What Constitutes an Anomaly
-- Temperature swings >5°C per hour  
-- Rapid pressure changes  
-- Unexpected precipitation patterns  
-- Deviation from seasonal norms  
 
 ## How the Prediction Engine Works
 
