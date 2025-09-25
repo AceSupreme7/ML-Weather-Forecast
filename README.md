@@ -185,7 +185,7 @@ This project is open source and available under the **MIT License**.
 - **No Historical Data**: Check if your selected location has available historical data  
 - **Import Errors**: Verify all required packages are installed correctly
 
-# Weather Prediction System: Accuracy Analysis & Technical Deep Dive
+# Weather Prediction System: Accuracy Analysis
 
 ## Accuracy Assessment
 
