@@ -1,11 +1,15 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from datetime import datetime, timedelta, UTC
 
 def visualize_weather_predictions(predictions_df):
-
-    one_day_df = predictions_df.head(24).copy() # 24h Prediction
     
+    one_day_df = predictions_df.head(24).copy() # 24h Prediction
+
+    start_datetime = one_day_df['datetime'].iloc[0]
+    start_date_str = start_datetime.strftime('%Y-%m-%d %H:%M')
+
     if 'hour' not in one_day_df.columns and 'datetime' in one_day_df.columns:
         one_day_df['hour'] = one_day_df['datetime'].dt.hour
 
@@ -26,7 +30,7 @@ def visualize_weather_predictions(predictions_df):
     ax1.axhline(y=avg_temp, color='blue', linestyle='--', linewidth=1.5, 
                label=f'Average ({avg_temp:.1f} C)', alpha=0.7)
 
-    ax1.set_title(f'24-Hour Temperature Forecast')
+    ax1.set_title(f'24-Hour Temperature Forecast\nStarting: {start_date_str} UTC', fontsize=14, fontweight='bold')
     ax1.set_ylabel('Temperature (C)')
     ax1.grid(True, alpha=0.3)
     ax1.set_xticks(range(0, 24, 2))
@@ -36,7 +40,7 @@ def visualize_weather_predictions(predictions_df):
     precip_values = one_day_df['predicted_precipitation'].values
     ax2.bar(hours, precip_values, color='blue', alpha=0.7, label='Precipitation')
 
-    ax2.set_title('24-Hour Precipitation Forecast')
+    ax2.set_title(f'24-Hour Precipitation Forecast', fontsize=14, fontweight='bold')
     ax2.set_xlabel('Hour of Day')
     ax2.set_ylabel('Precipitation (mm)')
     ax2.grid(True, alpha=0.3)
